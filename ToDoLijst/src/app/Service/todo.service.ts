@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { rendererTypeName } from '@angular/compiler';
+import { ToDo } from '../Class/ToDo';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +9,7 @@ export class TodoService {
 
   constructor() { }
 
+  
   getToDos(){
     return[
       {"id":1,"titel":"Inkopen","beschrijving":"ga naar de winkel en doe de inkopen","done":false},
@@ -17,4 +19,5 @@ export class TodoService {
       {"id":5,"titel":"Afstoffen","beschrijving":"stof de benedenverdieping af","done":false},
     ]; 
   }
+
 }

@@ -1,1 +1,5 @@
-<p>todo works!</p>
+<h1>To Do lijst</h1>
+<br/>
+<ul *ngFor="let todo of todos">
+    <li>{{todo.id}} - {{todo.titel}} - {{todo.beschrijving}} </li> <button>Details</button>
+</ul>
